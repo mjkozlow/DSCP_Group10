@@ -1,0 +1,6 @@
+universe = local
+executable = /bin/true
+output     = log/post.out
+error      = log/post.err
+log        = log/post.log
+queue

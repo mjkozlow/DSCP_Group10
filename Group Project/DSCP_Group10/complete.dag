@@ -1,0 +1,11 @@
+JOB 1 download_and_split.sub
+JOB 2 sum_by_time.sub
+JOB 3 sum_by_location.sub
+JOB 4 post.sub
+
+SCRIPT POST 2 sum_by_time_combine_and_plot.sh
+SCRIPT POST 3 sum_by_location_combine_and_plot.sh
+SCRIPT POST 4 post.sh
+
+PARENT 1 CHILD 2 3
+PARENT 2 3 CHILD 4

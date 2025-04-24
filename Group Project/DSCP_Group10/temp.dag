@@ -1,0 +1,9 @@
+JOB 1 sum_by_time.sub
+JOB 2 sum_by_location.sub
+JOB 3 post.sub
+
+SCRIPT POST 1 sum_by_time_combine_and_plot.sh
+SCRIPT POST 2 sum_by_location_combine_and_plot.sh
+SCRIPT POST 3 post.sh
+
+PARENT 1 2 CHILD 3

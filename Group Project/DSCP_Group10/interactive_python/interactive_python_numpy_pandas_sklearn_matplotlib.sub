@@ -1,0 +1,30 @@
+# ----------------------------------------------------------------------
+# This file is only necessary for students who want to use a python
+# package other than numpy, pandas, and sklearn.
+# ----------------------------------------------------------------------
+
+# Run via:
+#   condor_submit -i interactive_python_numpy_pandas_sklearn_matplotlib.sub
+#
+# Then, in interactive job, run this to make an Apptainer ".sif" file
+# that provides a software environment on CHTC computers:
+#   apptainer build python_numpy_pandas_sklearn_matplotlib.sif python_numpy_pandas_sklearn_matplotlib.def
+#
+# Then run this to test a shell with the ".sif" container:
+#   apptainer shell -e python_numpy_pandas_sklearn_matplotlib.sif
+# Tests should include starting python and importing these libraries.
+#
+# After exiting this interactive job, copy the new
+# python_numpy_pandas_sklearn_matplotlib.sif to /staging/NetID, where NetID is
+# your NetID, so that you can refer to it in your ".sub" file.
+
+log = interactive_python_numpy_pandas_sklearn_matplotlib.log
+
+transfer_input_files = python_numpy_pandas_sklearn_matplotlib.def
+
++IsBuildJob = true
+request_cpus = 1
+request_memory = 8GB
+request_disk = 30GB
+
+queue
