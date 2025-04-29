@@ -2,6 +2,9 @@ Data Science Computing Project Group 10: Shradha Gangam, Miles Kozlowski, Ian La
 
 SOURCES: Chicago Data Portal - https://www.chicago.gov/city/en.html
 
+Boundaries - Community Areas - Map: https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Community-Areas-Map/cauq-8yn6
+77 Communities in Chicago, with id number, name, and coordinates
+
 Transportation Network Providers 2018-2022: https://data.cityofchicago.org/Transportation/Transportation-Network-Providers-Trips-2018-2022-/m6dm-c72p/about_data
 300M Rows, 21 Columns, each row is a trip with a unique `Trip ID`
 
