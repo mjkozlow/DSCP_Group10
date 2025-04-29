@@ -17,87 +17,87 @@ Column Name: API Field Name: Data Type
 Description.
 
 1.
-Trip ID: trip_id: Text
+Trip ID: `trip_id`: Text
 A unique identifier for the trip.
 
 2.
-Trip Start Timestamp: trip_start_timestamp: Floating Timestamp
+Trip Start Timestamp: `trip_start_timestamp`: Floating Timestamp
 When the trip started, rounded to the nearest 15 minutes.
 
 3.
-Trip End Timestamp: trip_end_timestamp: Floating Timestamp
+Trip End Timestamp: `trip_end_timestamp`: Floating Timestamp
 When the trip ended, rounded to the nearest 15 minutes.
 
 4.
-Trip Seconds: trip_second: Number
+Trip Seconds: `trip_second`: Number
 Time of the trip in seconds.
 
 5.
-Trip Miles: trip_miles: Number
+Trip Miles: `trip_miles`: Number
 Distance of the trip in miles.
 
 6.
-Pickup Census Tract: pickup_census_tract: Text
+Pickup Census Tract: `pickup_census_tract`: Text
 The Census Tract where the trip began.This column often will be blank for locations outside Chicago.
 
 7.
-Dropoff Census Tract: dropoff_census_tract: Text
+Dropoff Census Tract: `dropoff_census_tract`: Text
 The Census Tract where the trip ended. This column often will be blank for locations outside Chicago.
 
 8.
-Pickup Community Area: pickup_community_area: Number
+Pickup Community Area: `pickup_community_area`: Number
 The Community Area where the trip began. This column will be blank for locations outside Chicago.
 
 9.
-Dropoff Community Area: dropoff_community_area: Number
+Dropoff Community Area: `dropoff_community_area`: Number
 The Community Area where the trip ended. This column will be blank for locations outside Chicago.
 
 10.
-Fare: fare: Number
+Fare: `fare`: Number
 The fare for the trip, rounded to the nearest $2.50.
 
 11.
-Tip: tip: Number
+Tip: `tip`: Number
 The tip for the trip, rounded to the nearest $1.00. Cash tips will not be recorded.
 
 12.
-Additional Charges: additional_charges: Number
+Additional Charges: `additional_charges`: Number
 The taxes, fees, and any other charges for the trip.
 
 13.
-Trip Total: trip_total: Number
+Trip Total: `trip_total`: Number
 Total cost of the trip. This is calculated as the total of the previous columns, including rounding.
 
 14.
-Shared Trip Authorized: shared_trip_authorized: Checkbox
+Shared Trip Authorized: `shared_trip_authorized`: Checkbox
 Whether the customer agreed to a shared trip with another customer, regardless of whether the customer was actually matched for a shared trip.
 
 15.
-Trips Pooled: trips_pooled: Number
+Trips Pooled: `trips_pooled`: Number
 If customers were matched for a shared trip, how many trips, including this one, were pooled. All customer trips from the time the vehicle was empty until it was empty again contribute to this count, even if some customers were never present in the vehicle at the same time. Each trip making up the overall shared trip will have a separate record in this dataset, with the same value in this column.
 
 16.
-Pickup Centroid Latitude: pickup_centroid_latitude: Number
+Pickup Centroid Latitude: `pickup_centroid_latitude`: Number
 The latitude of the center of the pickup census tract or the community area if the census tract has been hidden for privacy. This column often will be blank for locations outside Chicago.
 
 17.
-Pickup Centroid Longitude: pickup_centroid_longitude: Number
+Pickup Centroid Longitude: `pickup_centroid_longitude`: Number
 The longitude of the center of the pickup census tract or the community area if the census tract has been hidden for privacy. This column often will be blank for locations outside Chicago.
 
 18.
-Pickup Centroid Location: pickup_centroid_location: Point
+Pickup Centroid Location: `pickup_centroid_location`: Point
 The location of the center of the pickup census tract or the community area if the census tract has been hidden for privacy. This column often will be blank for locations outside Chicago.
 
 19.
-Dropoff Centroid Latitude: dropoff_centroid_latitude: Number
+Dropoff Centroid Latitude: `dropoff_centroid_latitude`: Number
 The latitude of the center of the dropoff census tract or the community area if the census tract has been hidden for privacy. This column often will be blank for locations outside Chicago.
 
 20.
-Dropoff Centroid Longitude: dropoff_centroid_longitude: Number
+Dropoff Centroid Longitude: `dropoff_centroid_longitude`: Number
 The longitude of the center of the dropoff census tract or the community area if the census tract has been hidden for privacy. This column often will be blank for locations outside Chicago.
 
 21.
-Dropoff Centroid Location: Point: dropoff_centroid_location.
+Dropoff Centroid Location: `dropoff_centroid_location`: Point
 The location of the center of the dropoff census tract or the community area if the census tract has been hidden for privacy. This column often will be blank for locations outside Chicago.
 
 
@@ -106,13 +106,13 @@ The location of the center of the dropoff census tract or the community area if 
 The three removed columns from 2022-2024 and 2025- are:
 
 1.
-Percent Time Chicago: percent_time_chicago: Number
+Percent Time Chicago: `percent_time_chicago`: Number
 Percent of the trip time that was in Chicago.
 
 2.
-Percent Distance Chicago: percent_distance_chicago: Number
+Percent Distance Chicago: `percent_distance_chicago`: Number
 Percent of the trip distance that was in Chicago.
 
 3.
-Shared Trip Match: shared_trip_match: Checkbox
+Shared Trip Match: `shared_trip_match`: Checkbox
 Whether the customer was actually matched to a shared trip.
